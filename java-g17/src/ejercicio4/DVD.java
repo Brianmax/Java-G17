@@ -25,4 +25,12 @@ public class DVD extends LibraryItem{
     public void setDuration(int duration) {
         this.duration = duration;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", director='" + director + '\'' +
+                ", duration=" + duration +
+                '}';
+    }
 }

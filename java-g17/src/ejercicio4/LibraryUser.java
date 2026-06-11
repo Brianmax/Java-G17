@@ -37,9 +37,22 @@ public class LibraryUser {
         this.loanedItems = loanedItems;
     }
 
-    public void showDetails() {
-        System.out.println("Username: " + username);
-        System.out.println("User ID: " + userId);
-        System.out.println("Loaned Items: " + loanedItems.size());
+//    public void showDetails() {
+//        System.out.println("Username: " + username);
+//        System.out.println("User ID: " + userId);
+//        System.out.println("Loaned Items: " + loanedItems.size());
+//    }
+
+    public void addLoanedItem(LibraryItem libraryItem) {
+        loanedItems.add(libraryItem);
+    }
+
+    @Override
+    public String toString() {
+        return "LibraryUser{" +
+                "username='" + username + '\'' +
+                ", userId='" + userId + '\'' +
+                ", loanedItems=" + loanedItems.size() +
+                '}';
     }
 }

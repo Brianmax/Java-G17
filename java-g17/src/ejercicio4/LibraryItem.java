@@ -44,4 +44,11 @@ public abstract class LibraryItem {
         System.out.println("Author: " + itemId);
         System.out.println("Loaned: " + (isLoaned ? "Yes" : "No"));
     }
+    @Override
+    public String toString() {
+        return "LibraryItem{" +
+                "title='" + title + '\'' +
+                ", itemId='" + itemId + '\'' +
+                ", isLoaned=" + isLoaned;
+    }
 }
